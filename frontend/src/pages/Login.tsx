@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { motion } from 'framer-motion';
+
 import { Lock, Mail, ArrowRight, ShieldCheck } from 'lucide-react';
 import axios from 'axios';
 import { Reveal } from '../components/Reveal';

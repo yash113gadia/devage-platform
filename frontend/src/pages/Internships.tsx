@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
-  Code2, Smartphone, Database, BrainCircuit, 
+  Code2, Smartphone, BrainCircuit, 
   Palette, Cloud, Link as LinkIcon, Megaphone, Shield,
   ArrowRight, Activity, Sparkles
 } from 'lucide-react';

@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Rocket, Bot, Monitor, Check, Globe, 
+  Rocket, Bot, Monitor, Check, 
   ShoppingBag, PenTool, Dumbbell, Utensils, Hotel, ArrowRight, 
-  Code, BarChart3, Users, Zap, Layers, Sparkles
+  Code, Users, Zap, Sparkles
 } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 

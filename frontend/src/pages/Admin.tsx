@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { Users, FileCode, DollarSign, Check, X, Eye, ExternalLink } from 'lucide-react';
+import { Users, FileCode, Check, X, Eye, ExternalLink } from 'lucide-react';
 
 // Mock Data Types
 type Applicant = {

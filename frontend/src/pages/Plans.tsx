@@ -1,5 +1,5 @@
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+
 import { Check, Monitor, Smartphone, Bot, Settings } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 

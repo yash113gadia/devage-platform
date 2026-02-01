@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { motion } from 'framer-motion';
-import { Mail, Send, MessageSquare } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 
 type ContactForm = {

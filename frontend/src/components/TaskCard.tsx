@@ -8,7 +8,7 @@ interface TaskCardProps {
   status: 'Open' | 'Assigned' | 'Completed';
 }
 
-const TaskCard = ({ title, description, bounty, difficulty, status }: TaskCardProps) => {
+const TaskCard = ({ title, description, difficulty, status }: TaskCardProps) => {
   const isCompleted = status === 'Completed';
   
   const difficultyColor = {

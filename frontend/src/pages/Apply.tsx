@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { useSearchParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+
 import { Github, Send, GraduationCap, ArrowLeft, Briefcase } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 

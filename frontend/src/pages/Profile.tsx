@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Award, FileText, LogOut, CheckCircle, ExternalLink, ShieldCheck, X, Download, Share2 } from 'lucide-react';
+import { User, Award, FileText, LogOut, ExternalLink, ShieldCheck, X, Download, Share2 } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 
 const Profile = () => {
