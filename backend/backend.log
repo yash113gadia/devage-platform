@@ -1,0 +1,21 @@
+INFO:     Started server process [11505]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59564 - "OPTIONS /users/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59564 - "POST /users/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59564 - "POST /token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59564 - "OPTIONS /me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59565 - "GET /me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "GET /certificates/DEV-2025-042 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59570 - "GET /certificates/DEV-2025-042 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59584 - "POST /token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59584 - "GET /me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62313 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62313 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62313 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62348 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11505]

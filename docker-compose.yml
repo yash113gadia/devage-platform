@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # --- Backend Service ---
+  backend:
+    build: ./backend
+    # Remove container_name to allow scaling (Docker prevents duplicate names)
+    # container_name: devage-backend 
+    ports:
+      # Map container port 8000 to a random host port range for scaling
+      # Or just don't map ports if only Frontend talks to it (Best for scaling)
+      - "8000-8010:8000" 
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/devage_db
+      - SECRET_KEY=supersecretkey
+      - DB_POOL_SIZE=10
+      - DB_MAX_OVERFLOW=20
+    depends_on:
+      - db
+    networks:
+      - devage-network
+    deploy:
+      mode: replicated
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  # --- Frontend Service ---
+  frontend:
+    build: ./frontend
+    container_name: devage-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - devage-network
+
+  # --- Database Service ---
+  db:
+    image: postgres:15-alpine
+    container_name: devage-db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=devage_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - devage-network
+
+volumes:
+  postgres_data:
+
+networks:
+  devage-network:
+    driver: bridge
